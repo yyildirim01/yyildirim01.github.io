@@ -5,17 +5,177 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kees: Learn Dutch - Support</title>
 <style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
-h1 { font-size: 28px; }
-a { color: #21468B; }
-.email { font-size: 18px; font-weight: 600; }
+  :root {
+    --blue: #21468B;
+    --blue-dark: #163166;
+    --bg: #f7f8fb;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --border: #e8eaf0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1220;
+      --card: #171b2e;
+      --text: #eef0f6;
+      --muted: #a2a8bd;
+      --border: #2a2f45;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .hero {
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    color: #fff;
+    padding: 64px 24px 88px;
+    text-align: center;
+  }
+  .logo {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 20px;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .hero h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+  .hero p {
+    margin: 0;
+    font-size: 17px;
+    opacity: 0.9;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: -56px auto 60px;
+    padding: 0 20px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 10px 40px rgba(20,20,50,0.08);
+    margin-bottom: 24px;
+  }
+  .card h2 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--blue);
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-size: 16px;
+  }
+  .contact-btn:hover { background: var(--blue-dark); }
+  .center { text-align: center; }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+  }
+  .faq-item p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    padding-bottom: 40px;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
 </style>
 </head>
 <body>
-<h1>Kees: Learn Dutch - Support</h1>
-<p>Need help, have feedback, or found a bug? We're happy to help.</p>
-<p class="email"><a href="mailto:futuregames31@gmail.com">futuregames31@gmail.com</a></p>
-<p>We usually reply within a few days.</p>
+
+<div class="hero">
+  <span class="badge">Kees: Learn Dutch</span>
+  <div class="logo"><img src="data:image/png;base64,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"></div>
+  <h1>How can we help?</h1>
+  <p>Support for the Kees Dutch learning app</p>
+</div>
+
+<div class="wrap">
+
+  <div class="card center">
+    <h2>Contact us</h2>
+    <p>Have a question, found a bug, or want to share feedback? We usually reply within a few days.</p>
+    <a class="contact-btn" href="mailto:futuregames31@gmail.com?subject=Kees%20App%20Support">
+      Send us a message
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-item">
+      <h3>Is my data safe?</h3>
+      <p>Kees does not sell your personal data. Speech and photo inputs are only used to power pronunciation feedback and text scanning features.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why does Kees ask for microphone access?</h3>
+      <p>The microphone is used for speaking exercises so Kees can give you pronunciation feedback. You can decline this permission, but speaking exercises won't work without it.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why does Kees ask for camera / photo access?</h3>
+      <p>The camera and photo library are used for the "Scan &amp; Learn" feature, which recognizes Dutch text in images so you can translate and save new words.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I report a bug or request a feature?</h3>
+      <p>Send us an email using the button above with as much detail as possible (what happened, what you expected, and your device model).</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I use Kees offline?</h3>
+      <p>Most learning content works offline. Speech recognition and some pronunciation features may require an internet connection.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Future Games - Kees: Learn Dutch
+</footer>
+
 </body>
 </html>
-
