@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memorix - Support</title>
+<style>
+  :root {
+    --blue: #4A47E0;
+    --blue-dark: #2E2B8C;
+    --bg: #f7f8fb;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --border: #e8eaf0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1220;
+      --card: #171b2e;
+      --text: #eef0f6;
+      --muted: #a2a8bd;
+      --border: #2a2f45;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .hero {
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    color: #fff;
+    padding: 64px 24px 88px;
+    text-align: center;
+  }
+  .logo {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 20px;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .hero h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+  .hero p {
+    margin: 0;
+    font-size: 17px;
+    opacity: 0.9;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: -56px auto 60px;
+    padding: 0 20px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 10px 40px rgba(20,20,50,0.08);
+    margin-bottom: 24px;
+  }
+  .card h2 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--blue);
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-size: 16px;
+  }
+  .contact-btn:hover { background: var(--blue-dark); }
+  .center { text-align: center; }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+  }
+  .faq-item p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    padding-bottom: 40px;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <span class="badge">Memorix: Reminder &amp; Tracker</span>
+  <div class="logo"><img src="memorix-icon.png" alt="Memorix"></div>
+  <h1>How can we help?</h1>
+  <p>Support for the Memorix reminder &amp; tracker app</p>
+</div>
+
+<div class="wrap">
+
+  <div class="card center">
+    <h2>Contact us</h2>
+    <p>Have a question, found a bug, or want to share feedback? We usually reply within a few days.</p>
+    <a class="contact-btn" href="mailto:futuregames31@gmail.com?subject=Memorix%20App%20Support">
+      Send us a message
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-item">
+      <h3>Is my data safe?</h3>
+      <p>Memorix does not sell your personal data. By default, everything you add (warranties, subscriptions, maintenance, documents, notes) stays on your device and never leaves it.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why does Memorix ask for camera / photo access?</h3>
+      <p>The camera and photo library are used so you can attach a photo of a receipt, warranty, or document to an item. These photos are stored locally on your device.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What does the optional Cloud Backup &amp; Sync do?</h3>
+      <p>If you purchase and enable Cloud Backup &amp; Sync, you sign in with your Google account and Memorix stores an encrypted backup in your own private Google Drive App Data folder, so you can restore your data on another device. It's entirely optional.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>I redeemed a code but premium isn't unlocked. What do I do?</h3>
+      <p>Make sure you have an internet connection when redeeming, then restart the app. If it still doesn't work, contact us with the code you used and your device model.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I restore a purchase I already made?</h3>
+      <p>Use the "Restore Purchases" option in the app's settings screen, signed in with the same Apple ID or Google account you originally purchased with.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I report a bug or request a feature?</h3>
+      <p>Send us an email using the button above with as much detail as possible (what happened, what you expected, and your device model).</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I use Memorix offline?</h3>
+      <p>Yes. All core features (warranties, subscriptions, maintenance, documents, notes, and reminders) work fully offline. An internet connection is only needed for redeem codes and optional Cloud Backup &amp; Sync.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Future Games - Memorix: Reminder &amp; Tracker
+</footer>
+
+</body>
+</html>
