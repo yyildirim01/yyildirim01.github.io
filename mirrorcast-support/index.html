@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MirrorCast TV - Support</title>
+<style>
+  :root {
+    --blue: #0A84FF;
+    --blue-dark: #5E5CE6;
+    --bg: #f7f8fb;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --border: #e8eaf0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1220;
+      --card: #171b2e;
+      --text: #eef0f6;
+      --muted: #a2a8bd;
+      --border: #2a2f45;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .hero {
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    color: #fff;
+    padding: 64px 24px 88px;
+    text-align: center;
+  }
+  .logo {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 20px;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .hero h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+  .hero p {
+    margin: 0;
+    font-size: 17px;
+    opacity: 0.9;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: -56px auto 60px;
+    padding: 0 20px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 10px 40px rgba(20,20,50,0.08);
+    margin-bottom: 24px;
+  }
+  .card h2 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--blue);
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-size: 16px;
+  }
+  .contact-btn:hover { background: var(--blue-dark); }
+  .center { text-align: center; }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+  }
+  .faq-item p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    padding-bottom: 40px;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <span class="badge">MirrorCast TV: Screen Mirroring &amp; Casting</span>
+  <div class="logo"><img src="mirrorcast-icon.png" alt="MirrorCast TV"></div>
+  <h1>How can we help?</h1>
+  <p>Support for the MirrorCast TV screen mirroring app</p>
+</div>
+
+<div class="wrap">
+
+  <div class="card center">
+    <h2>Contact us</h2>
+    <p>Have a question, found a bug, or want to share feedback? We usually reply within a few days.</p>
+    <a class="contact-btn" href="mailto:futuregames31@gmail.com?subject=MirrorCast%20TV%20Support">
+      Send us a message
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-item">
+      <h3>How do I mirror my iPhone screen to my TV?</h3>
+      <p>Make sure your iPhone and TV are on the same Wi-Fi network, open MirrorCast, pick your TV from the list, choose Screen Mirroring, and tap Start Mirroring.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Which TVs and devices are supported?</h3>
+      <p>MirrorCast works with Samsung and LG smart TVs (DLNA/UPnP), and with Chromecast and Android TV devices (Google Cast).</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why does MirrorCast ask for Local Network access?</h3>
+      <p>MirrorCast needs Local Network permission to search your Wi-Fi network for compatible TVs and Chromecast devices. Without it, the app can't find any devices to mirror or cast to.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why does MirrorCast ask for Photos access?</h3>
+      <p>Photos access is only needed if you use the Cast Photos or Cast Videos features, so you can pick a photo or video from your library to show on the connected TV.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is my data safe?</h3>
+      <p>MirrorCast does not sell your personal data or show ads. Your mirrored screen, photos, and videos are streamed directly to your TV over your own Wi-Fi network and are never uploaded to our servers.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>I have a promo code, how do I redeem it?</h3>
+      <p>Open Settings, scroll to the Premium section, and tap "Have a code?" to enter it.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I restore a purchase I already made?</h3>
+      <p>Open the Premium screen and tap "Restore Purchases", signed in with the same Apple ID you originally subscribed with.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Mirroring keeps disconnecting, what should I do?</h3>
+      <p>Make sure both devices stay on the same Wi-Fi network and are within good signal range, and that your router allows local device discovery. Restarting the app or your TV's casting app can also help.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I report a bug or request a feature?</h3>
+      <p>Send us an email using the button above with as much detail as possible (what happened, what you expected, and your device model).</p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Future Games - MirrorCast TV
+</footer>
+
+</body>
+</html>
+
