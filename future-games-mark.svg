@@ -1,27 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-  <title id="title">Future Games icon</title>
-  <desc id="desc">A modern game controller with a forward play symbol.</desc>
-  <defs>
-    <linearGradient id="bg" x1="26" y1="20" x2="228" y2="238" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#242043"/>
-      <stop offset="1" stop-color="#111024"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="99" y1="99" x2="205" y2="170" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#8169FF"/>
-      <stop offset="0.5" stop-color="#D45ACB"/>
-      <stop offset="1" stop-color="#FF795B"/>
-    </linearGradient>
-    <filter id="shadow" x="-25%" y="-25%" width="150%" height="165%">
-      <feDropShadow dx="0" dy="14" stdDeviation="13" flood-color="#0A081B" flood-opacity="0.38"/>
-    </filter>
-  </defs>
-  <rect x="14" y="14" width="228" height="228" rx="62" fill="url(#bg)" filter="url(#shadow)"/>
-  <rect x="15" y="15" width="226" height="226" rx="61" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2"/>
-  <path d="M70 72h116c21 0 39 15 44 36l15 63c5 21-20 36-35 21l-26-25H72l-26 25c-15 15-40 0-35-21l15-63c5-21 23-36 44-36Z" fill="#FFFFFF"/>
-  <rect x="65" y="112" width="48" height="16" rx="8" fill="#17142E"/>
-  <rect x="81" y="96" width="16" height="48" rx="8" fill="#17142E"/>
-  <circle cx="182" cy="108" r="11" fill="url(#accent)"/>
-  <circle cx="204" cy="132" r="11" fill="url(#accent)"/>
-  <path d="m127 103 39 25-39 25Z" fill="url(#accent)"/>
-  <path d="M111 85h34" stroke="#D9D5E5" stroke-width="8" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+
+<defs>
+  <linearGradient id="fgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#57F6FF"/>
+    <stop offset="42%" stop-color="#00B8FF"/>
+    <stop offset="75%" stop-color="#1462FF"/>
+    <stop offset="100%" stop-color="#4726FF"/>
+  </linearGradient>
+  <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#BFFBFF"/>
+    <stop offset="35%" stop-color="#47DFFF"/>
+    <stop offset="70%" stop-color="#1676FF"/>
+    <stop offset="100%" stop-color="#0A3EC7"/>
+  </linearGradient>
+  <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="10" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+
+<g>
+  <path d="M374 168
+           Q354 168 338 180
+           Q322 192 322 214
+           L322 303
+           Q322 319 338 329
+           L390 362
+           L390 316
+           Q390 302 402 297
+           Q411 294 423 302
+           L743 511
+           Q771 529 771 558
+           Q771 586 743 604
+           L423 813
+           Q411 821 402 818
+           Q390 813 390 799
+           L390 754
+           L338 787
+           Q322 797 322 813
+           L322 900
+           Q322 924 339 937
+           Q357 950 379 938
+           L833 643
+           Q875 616 875 558
+           Q875 501 833 474
+           L379 179
+           Q377 178 374 168 Z"
+        fill="url(#fgGrad)" filter="url(#softGlow)"/>
+  <path d="M150 330 L335 330 L397 373 L397 423 L268 423 L208 375 Z" fill="url(#fgGrad)"/>
+  <path d="M125 486 L397 486 L397 548 L220 548 L168 515 Z" fill="url(#fgGrad)"/>
+  <path d="M154 658 L335 658 L397 615 L397 674 L265 729 L208 729 Z" fill="url(#fgGrad)"/>
+  <path d="M548 506
+           C561 541 578 552 614 558
+           C578 564 561 575 548 610
+           C535 575 518 564 482 558
+           C518 552 535 541 548 506 Z"
+        fill="#A6FFFF"/>
+</g>
+
 </svg>
