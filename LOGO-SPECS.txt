@@ -1,0 +1,9 @@
+FUTURE GAMES — LOGO SPECS
+
+Primary icon master: 1024 x 1024 px, transparent or solid dark background.
+Website/favicon exports: 512 x 512 px, 192 x 192 px, 48 x 48 px and 32 x 32 px.
+Horizontal logo master: 2400 x 512 px, transparent background.
+Recommended safe area: keep key artwork within the central 76% of the square.
+Preferred formats: SVG master plus transparent PNG exports.
+
+The included SVG files are resolution-independent and can be exported at any of these sizes.

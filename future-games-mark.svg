@@ -1,26 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
   <title id="title">Future Games icon</title>
-  <desc id="desc">A colorful rounded-square icon with an interlocking F and G and a forward play symbol.</desc>
+  <desc id="desc">A modern game controller with a forward play symbol.</desc>
   <defs>
-    <linearGradient id="bg" x1="28" y1="20" x2="222" y2="238" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#6548EF"/>
-      <stop offset="0.5" stop-color="#A653E6"/>
-      <stop offset="1" stop-color="#FF755F"/>
+    <linearGradient id="bg" x1="26" y1="20" x2="228" y2="238" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#242043"/>
+      <stop offset="1" stop-color="#111024"/>
     </linearGradient>
-    <linearGradient id="shine" x1="70" y1="38" x2="182" y2="212" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFFFFF" stop-opacity="0.78"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    <linearGradient id="accent" x1="99" y1="99" x2="205" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8169FF"/>
+      <stop offset="0.5" stop-color="#D45ACB"/>
+      <stop offset="1" stop-color="#FF795B"/>
     </linearGradient>
-    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
-      <feDropShadow dx="0" dy="15" stdDeviation="14" flood-color="#352087" flood-opacity="0.34"/>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="165%">
+      <feDropShadow dx="0" dy="14" stdDeviation="13" flood-color="#0A081B" flood-opacity="0.38"/>
     </filter>
   </defs>
-  <rect x="14" y="14" width="228" height="228" rx="66" fill="url(#bg)" filter="url(#shadow)"/>
-  <path d="M38 100C48 60 79 37 119 34C165 30 207 59 221 101" fill="none" stroke="url(#shine)" stroke-width="9" stroke-linecap="round"/>
-  <path d="M70 72h71c11 0 20 9 20 20s-9 20-20 20H111v20h23c11 0 20 9 20 20s-9 20-20 20h-23v18c0 12-9 21-21 21s-21-9-21-21V93c0-12 8-21 21-21Z" fill="#fff"/>
-  <path d="M180 108a61 61 0 1 1-5-15" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round"/>
-  <path d="M165 106h43v43" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="m177 119 24 18-24 18Z" fill="#FFD25D"/>
-  <circle cx="199" cy="58" r="9" fill="#fff" fill-opacity="0.92"/>
-  <circle cx="217" cy="77" r="4" fill="#FFD25D"/>
+  <rect x="14" y="14" width="228" height="228" rx="62" fill="url(#bg)" filter="url(#shadow)"/>
+  <rect x="15" y="15" width="226" height="226" rx="61" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2"/>
+  <path d="M70 72h116c21 0 39 15 44 36l15 63c5 21-20 36-35 21l-26-25H72l-26 25c-15 15-40 0-35-21l15-63c5-21 23-36 44-36Z" fill="#FFFFFF"/>
+  <rect x="65" y="112" width="48" height="16" rx="8" fill="#17142E"/>
+  <rect x="81" y="96" width="16" height="48" rx="8" fill="#17142E"/>
+  <circle cx="182" cy="108" r="11" fill="url(#accent)"/>
+  <circle cx="204" cy="132" r="11" fill="url(#accent)"/>
+  <path d="m127 103 39 25-39 25Z" fill="url(#accent)"/>
+  <path d="M111 85h34" stroke="#D9D5E5" stroke-width="8" stroke-linecap="round"/>
 </svg>
