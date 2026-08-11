@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Future Games icon</title>
+  <desc id="desc">A colorful rounded-square icon with an interlocking F and G and a forward play symbol.</desc>
+  <defs>
+    <linearGradient id="bg" x1="28" y1="20" x2="222" y2="238" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6548EF"/>
+      <stop offset="0.5" stop-color="#A653E6"/>
+      <stop offset="1" stop-color="#FF755F"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="70" y1="38" x2="182" y2="212" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="15" stdDeviation="14" flood-color="#352087" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <rect x="14" y="14" width="228" height="228" rx="66" fill="url(#bg)" filter="url(#shadow)"/>
+  <path d="M38 100C48 60 79 37 119 34C165 30 207 59 221 101" fill="none" stroke="url(#shine)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M70 72h71c11 0 20 9 20 20s-9 20-20 20H111v20h23c11 0 20 9 20 20s-9 20-20 20h-23v18c0 12-9 21-21 21s-21-9-21-21V93c0-12 8-21 21-21Z" fill="#fff"/>
+  <path d="M180 108a61 61 0 1 1-5-15" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round"/>
+  <path d="M165 106h43v43" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m177 119 24 18-24 18Z" fill="#FFD25D"/>
+  <circle cx="199" cy="58" r="9" fill="#fff" fill-opacity="0.92"/>
+  <circle cx="217" cy="77" r="4" fill="#FFD25D"/>
+</svg>
