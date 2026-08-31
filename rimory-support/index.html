@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rimory - Support</title>
+<style>
+  :root {
+    --blue: #4A47E0;
+    --blue-dark: #2E2B8C;
+    --bg: #f7f8fb;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --border: #e8eaf0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1220;
+      --card: #171b2e;
+      --text: #eef0f6;
+      --muted: #a2a8bd;
+      --border: #2a2f45;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .hero {
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    color: #fff;
+    padding: 64px 24px 88px;
+    text-align: center;
+  }
+  .logo {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 20px;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .hero h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+  .hero p {
+    margin: 0;
+    font-size: 17px;
+    opacity: 0.9;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: -56px auto 60px;
+    padding: 0 20px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 10px 40px rgba(20,20,50,0.08);
+    margin-bottom: 24px;
+  }
+  .card h2 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--blue);
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-size: 16px;
+  }
+  .contact-btn:hover { background: var(--blue-dark); }
+  .center { text-align: center; }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+  }
+  .faq-item p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    padding-bottom: 40px;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <span class="badge">Rimory: AI Personal Memory</span>
+  <div class="logo"><img src="rimory-icon.png" alt="Rimory"></div>
+  <h1>How can we help?</h1>
+  <p>Support for the Rimory app</p>
+</div>
+
+<div class="wrap">
+
+  <div class="card center">
+    <h2>Contact us</h2>
+    <p>Have a question, found a bug, or want to share feedback? We usually reply within a few days.</p>
+    <a class="contact-btn" href="mailto:futuregames31@gmail.com?subject=Rimory%20App%20Support">
+      Send us a message
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-item">
+      <h3>Is my data safe?</h3>
+      <p>Rimory does not sell your personal data. By default, everything you capture (memories, trackers, checklists, Programs) stays on your device and never leaves it.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why does Rimory ask for microphone / speech recognition access?</h3>
+      <p>These are used so you can capture a memory by voice instead of typing. Your device's own speech recognition turns your voice into text; the audio itself is not stored or uploaded by Rimory.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why does Rimory ask for camera / photo access?</h3>
+      <p>The camera and photo library are used so you can attach a photo to a memory (for example a receipt or a moment you want to remember). These photos are stored locally on your device.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What does "Rimory AI" do with what I type?</h3>
+      <p>When you use quick capture or Ask Rimory, your text is sent to Google's Gemini API so the app can understand the type, date, and details of what you're recording, or answer your question about your own history. See our <a href="index.html">Privacy Policy</a> for details.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What does the optional cloud backup do?</h3>
+      <p>Rimory Pro includes optional backup to your own Google Drive (Android &amp; iOS) or iCloud (iOS only), so you can restore your data on a new device. It's entirely optional — if you never connect it, your data stays only on your device.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How does the home screen widget work?</h3>
+      <p>The widget shows a live snapshot of your own data — today's water progress, your next reminder, and today's Program tasks — read directly from your device. You can add water or complete a Program task straight from the widget.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How does the watch companion work?</h3>
+      <p>On Android, the Wear OS companion app shows your active Program's tasks, streak, and water progress, and lets you log water or complete a task from your watch. It stays in sync with the paired phone only — nothing goes through our servers.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I restore a purchase I already made?</h3>
+      <p>Use the "Restore Purchases" option on the Rimory Pro screen, signed in with the same Apple ID or Google account you originally purchased with.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I delete my data?</h3>
+      <p>Go to Profile &gt; Privacy Center &gt; Delete All Local Data, or simply uninstall the app. If you've enabled cloud backup, you can also remove the backup from your Google Drive or iCloud account.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I report a bug or request a feature?</h3>
+      <p>Send us an email using the button above with as much detail as possible (what happened, what you expected, and your device model).</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I use Rimory offline?</h3>
+      <p>Yes. Manual capture, checklists, water tracking, reminders, and Programs all work fully offline. An internet connection is only needed for AI-assisted capture, Ask Rimory, place search, and optional cloud backup.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Future Games - Rimory
+</footer>
+
+</body>
+</html>
