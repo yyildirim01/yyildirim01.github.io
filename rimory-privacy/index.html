@@ -103,7 +103,7 @@
   <span class="badge">Rimory: AI Personal Memory</span>
   <div class="logo"><img src="rimory-icon.png" alt="Rimory"></div>
   <h1>Privacy Policy</h1>
-  <p>Last updated: September 4, 2026</p>
+  <p>Last updated: September 11, 2026</p>
 </div>
 
 <div class="wrap">
@@ -112,11 +112,12 @@
     <p>This Privacy Policy explains how Rimory ("Rimory", "the app", "we") handles information when you use the app.</p>
 
     <h2>Information We Collect</h2>
-    <p>Rimory is designed to work entirely on your device by default. You do not need to create an account to use the core features (memory capture, Last Time trackers, checklists, water tracking, reminders, and Programs).</p>
+    <p>Rimory is local-first. You do not need to create an account to use the core features (memory capture, Last Time trackers, checklists, water tracking, reminders, and Programs). Personal data is not sent to the third-party AI provider unless you first give explicit permission in the app and then choose to use an AI feature.</p>
     <ul>
       <li><strong>Memory and tracker data:</strong> everything you add (captured moments, categories, people, places, notes, amounts, checklist items, water logs, Programs progress) is stored locally on your device in a local database.</li>
       <li><strong>Photos and voice notes:</strong> if you attach a photo to a memory, or use voice capture, these are processed on your device using the camera, photo library, or the microphone and speech recognition. Voice audio is transcribed using your device's built-in speech recognition (Apple's on iOS, Google's on Android) and is not stored or sent to our servers as audio.</li>
-      <li><strong>AI capture ("Rimory AI") and Ask Rimory:</strong> when you use free-text quick capture or ask Rimory a question about your history, the text you type is sent to Google's Gemini API to extract structured details (such as type, date, and category) or to answer your question. This text may include what you typed and, for Ask Rimory, relevant excerpts from your own local data needed to answer the question. Google's handling of this data is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. We do not use this content for advertising.</li>
+      <li><strong>AI capture ("Rimory AI") and Ask Rimory:</strong> before any third-party AI transfer, Rimory presents an in-app disclosure naming Google LLC and describing the data involved. Nothing is sent unless you select “Allow &amp; continue.” When permission is granted and you use an AI feature, Rimory may send Google LLC's Gemini API: (a) the text you type or the text transcript of speech you submit; (b) for Ask Rimory, your question and relevant local records that are not marked private or excluded from AI, including record titles, dates and times, people names, places, amounts/currency, and progress details; and (c) reminder text and typed receipt descriptions. This information is collected directly from what you enter and from eligible records stored in your local Rimory database. It is used to organize entries, understand reminder dates and titles, interpret typed receipt descriptions, and answer the question you asked. Rimory does not use this content for advertising.</li>
+      <li><strong>Data not sent to Gemini:</strong> Rimory does not send photos, attached files, original audio recordings, records marked private, or records you excluded from AI. Voice input is converted to text by the device speech-recognition service before any permitted AI request; only the resulting text may be included.</li>
       <li><strong>Place search:</strong> if you search for a place when adding a memory, your search text is sent to the Google Places API to return matching places. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
       <li><strong>Notifications:</strong> reminders and Programs check-ins are scheduled locally on your device. No reminder content is sent to our servers.</li>
       <li><strong>App Lock (Face ID / device biometrics):</strong> if you enable App Lock, biometric authentication is handled entirely by your device's operating system. Rimory never receives or stores your biometric data — it only receives a yes/no result from the OS.</li>
@@ -130,12 +131,12 @@
       <li><strong>Google Drive (Android &amp; iOS):</strong> if you choose to enable it, you sign in with your Google account and Rimory stores a backup of your local database in your own Google Drive's private "App Data" folder — a hidden space only Rimory can access, not visible in your regular Drive files.</li>
       <li><strong>iCloud (iOS only):</strong> if you choose to enable it, Rimory stores a backup of your local database in your device's iCloud account, in a private container only Rimory can access.</li>
     </ul>
-    <p>If you do not enable either option, none of your memory or tracker data ever leaves your device.</p>
+    <p>If you do not enable either backup option, no data is transferred for cloud backup. Data may still leave the device only for a separate feature you deliberately use, such as an AI request you have permitted or a place search, as described in this policy.</p>
 
     <h2>Third-Party Services</h2>
     <p>Rimory uses the following third-party services:</p>
     <ul>
-      <li><strong>Google Gemini API</strong> - for AI-assisted capture and Ask Rimory. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Google LLC — Google Gemini API</strong> - receives only the AI data described above, and only after your explicit in-app permission and use of an AI feature, to process and return the requested AI result. Google acts as our third-party AI service provider. We require service providers that process personal data for Rimory to maintain the same or an equivalent level of privacy protection as described in this policy and required by applicable law. Google's handling of data is also governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and the applicable <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API terms</a>.</li>
       <li><strong>Google Places API</strong> - for place search when logging a memory. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
       <li><strong>Google Sign-In &amp; Google Drive</strong> - only if you enable Google Drive backup, to store your backup in your own Drive account. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
       <li><strong>Apple iCloud</strong> - only if you enable iCloud backup (iOS only), governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
@@ -143,6 +144,7 @@
     <p>Rimory does not show ads and does not use any advertising or analytics SDKs that collect personal data.</p>
 
     <h2>Your Choices</h2>
+    <p><strong>AI permission:</strong> permission to share data with Google Gemini is off until you explicitly allow it. If you decline, no personal data is sent to Gemini and Rimory uses on-device processing where available. You can withdraw permission at any time in Rimory's Privacy Center by turning off “Share data with Google Gemini.” The change applies immediately to all later AI requests. Declining or withdrawing permission does not delete your local records and does not prevent you from using non-AI features.</p>
     <p>You can disable microphone, camera, photo library, speech recognition, or notification access at any time in your device Settings. You can disconnect Google Drive or iCloud backup at any time from the app's Privacy Center, which stops any further syncing.</p>
 
     <h2>Data Deletion</h2>
