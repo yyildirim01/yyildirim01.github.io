@@ -103,31 +103,43 @@
   <span class="badge">Kees: Learn Dutch</span>
   <div class="logo"><img src="/support/kees-icon.png" alt="Kees"></div>
   <h1>Privacy Policy</h1>
-  <p>Last updated: July 2026</p>
+  <p>Last updated: September 2026</p>
 </div>
 
 <div class="wrap">
   <div class="card">
 
-    <p>This Privacy Policy explains how Kees: Learn Dutch ("Kees", "the app", "we") handles information when you use the app.</p>
+    <p>This Privacy Policy explains how Kees: Learn Dutch ("Kees", "the app", "we") handles information when you use the app. Kees does not require an account and we do not sell your personal data.</p>
 
     <h2>Information We Collect</h2>
-    <p>Kees is designed to work mostly on your device. We do not require account creation and do not sell your personal data.</p>
+    <p>Kees is designed to keep learning progress on your device. Some features send the content needed for that feature directly to a third-party service, as described below.</p>
     <ul>
-      <li><strong>Microphone:</strong> used locally for speech exercises and pronunciation feedback. Audio is processed to give you feedback and is not stored on our servers.</li>
-      <li><strong>Camera and Photos:</strong> used for the Scan &amp; Learn feature to recognize Dutch text in images. Images are processed to extract text and are not uploaded to our servers.</li>
+      <li><strong>Microphone and speech:</strong> when you start a speaking or pronunciation exercise, the app records audio and sends it to Microsoft Azure Speech for speech recognition and, where applicable, pronunciation assessment. A reference sentence may be sent with pronunciation exercises. The temporary recording is deleted from the app's temporary storage after processing. We do not operate a server that stores these recordings.</li>
+      <li><strong>Text-to-speech:</strong> text you choose to hear may be sent to Microsoft Azure Speech to create audio. If Azure is unavailable, the app may send up to 200 characters to Google Translate text-to-speech as a fallback.</li>
+      <li><strong>Camera and Photos:</strong> used for Scan &amp; Learn. The selected image is processed on the device with Google ML Kit to recognize text and is not uploaded by Kees. If you request a translation, the extracted text is sent to MyMemory.</li>
+      <li><strong>Translations, word suggestions and examples:</strong> text you submit for translation may be sent to MyMemory; Dutch word prefixes may be sent to Dutch Wiktionary for suggestions; and a Dutch word you add may be sent to Tatoeba to look for a Dutch example sentence and English translation.</li>
       <li><strong>Vocabulary and progress data:</strong> stored locally on your device (e.g. My Words, quiz progress) so the app can work offline.</li>
-      <li><strong>Advertising identifiers:</strong> Kees uses Google AdMob to show ads. AdMob may collect device identifiers (such as the advertising ID) to show and measure ads, including personalized ads where permitted by your device settings (App Tracking Transparency on iOS).</li>
+      <li><strong>Advertising and diagnostics data:</strong> Kees uses Google AdMob. Depending on your consent, device and region, the Google Mobile Ads SDK may process information such as IP address, app interactions, diagnostic information, and device or advertising identifiers to deliver, measure and protect ads. Personalized ads are used only where your consent and device settings permit them.</li>
     </ul>
 
     <h2>Third-Party Services</h2>
-    <p>Kees uses the following third-party service:</p>
+    <p>These providers receive data directly from your device only when the related feature is used, except for advertising services that may run when ads are permitted:</p>
     <ul>
-      <li><strong>Google AdMob</strong> - for displaying ads. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> for details on how Google handles data.</li>
+      <li><strong>Microsoft Azure Speech</strong> - speech recognition, pronunciation assessment and text-to-speech. See <a href="https://learn.microsoft.com/legal/cognitive-services/speech-service/speech-to-text/data-privacy-security" target="_blank" rel="noopener">Speech data, privacy and security</a> and the <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">Microsoft Privacy Statement</a>.</li>
+      <li><strong>Google</strong> - AdMob advertising, Google ML Kit text recognition, and Google Translate text-to-speech fallback. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener">Google Mobile Ads data disclosure</a>.</li>
+      <li><strong>MyMemory</strong> - translation of text submitted by you or recognized through Scan &amp; Learn. See <a href="https://mymemory.translated.net/doc/spec.php" target="_blank" rel="noopener">MyMemory API specifications</a>.</li>
+      <li><strong>Tatoeba</strong> - example-sentence search for words you add. See <a href="https://tatoeba.org/en/terms_of_use" target="_blank" rel="noopener">Tatoeba Terms of Use</a>.</li>
+      <li><strong>Wikimedia / Dutch Wiktionary</strong> - Dutch word suggestions. See the <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noopener">Wikimedia Privacy Policy</a>.</li>
     </ul>
 
+    <h2>Data Retention</h2>
+    <p>Your vocabulary, saved items, settings and progress remain on your device until you remove them, clear the app's data or uninstall the app. Kees does not keep a server-side copy. Third-party providers may process technical information and retain service or security logs under their own policies.</p>
+
     <h2>Your Choices</h2>
-    <p>You can disable microphone, camera, or photo access at any time in your device Settings. On iOS, you can limit ad tracking via Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
+    <p>You can use most study content without granting microphone, camera or photo access. You can disable those permissions at any time in your device settings. You choose when to use speech, Scan &amp; Learn, translation, word-suggestion and example-sentence features. Advertising privacy choices are available in the app when required; on iOS, tracking can also be limited via Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
+
+    <h2>Security</h2>
+    <p>We use platform protections and encrypted HTTPS connections when communicating with the services above. No method of electronic transmission or storage is completely secure.</p>
 
     <h2>Children's Privacy</h2>
     <p>Kees is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
