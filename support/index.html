@@ -1,180 +1,234 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kees: Learn Dutch - Support</title>
-<style>
-  :root {
-    --blue: #21468B;
-    --blue-dark: #163166;
-    --bg: #f7f8fb;
-    --card: #ffffff;
-    --text: #1a1a2e;
-    --muted: #6b7280;
-    --border: #e8eaf0;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0f1220;
-      --card: #171b2e;
-      --text: #eef0f6;
-      --muted: #a2a8bd;
-      --border: #2a2f45;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-  }
-  .hero {
-    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
-    color: #fff;
-    padding: 64px 24px 88px;
-    text-align: center;
-  }
-  .logo {
-    width: 88px;
-    height: 88px;
-    margin: 0 auto 20px;
-    border-radius: 22px;
-    overflow: hidden;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-  }
-  .logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  .hero h1 {
-    margin: 0 0 8px;
-    font-size: 32px;
-    font-weight: 800;
-  }
-  .hero p {
-    margin: 0;
-    font-size: 17px;
-    opacity: 0.9;
-  }
-  .wrap {
-    max-width: 720px;
-    margin: -56px auto 60px;
-    padding: 0 20px;
-  }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 32px;
-    box-shadow: 0 10px 40px rgba(20,20,50,0.08);
-    margin-bottom: 24px;
-  }
-  .card h2 {
-    margin-top: 0;
-    font-size: 20px;
-  }
-  .contact-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: var(--blue);
-    color: #fff !important;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 14px 28px;
-    border-radius: 999px;
-    font-size: 16px;
-  }
-  .contact-btn:hover { background: var(--blue-dark); }
-  .center { text-align: center; }
-  .faq-item {
-    border-bottom: 1px solid var(--border);
-    padding: 18px 0;
-  }
-  .faq-item:last-child { border-bottom: none; }
-  .faq-item h3 {
-    margin: 0 0 6px;
-    font-size: 16px;
-  }
-  .faq-item p {
-    margin: 0;
-    color: var(--muted);
-    font-size: 15px;
-  }
-  footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 13px;
-    padding-bottom: 40px;
-  }
-  .badge {
-    display: inline-block;
-    background: rgba(255,255,255,0.15);
-    padding: 6px 14px;
-    border-radius: 999px;
-    font-size: 13px;
-    margin-bottom: 16px;
-  }
-</style>
-</head>
-<body>
-
-<div class="hero">
-  <span class="badge">Kees: Learn Dutch</span>
-    <div class="logo"><img src="kees-icon.png"></div>  <h1>How can we help?</h1>
-  <p>Support for the Kees Dutch learning app</p>
-</div>
-
-<div class="wrap">
-
-  <div class="card center">
-    <h2>Contact us</h2>
-    <p>Have a question, found a bug, or want to share feedback? We usually reply within a few days.</p>
-    <a class="contact-btn" href="mailto:futuregames31@gmail.com?subject=Kees%20App%20Support">
-      Send us a message
-    </a>
-  </div>
-
-  <div class="card">
-    <h2>Frequently asked questions</h2>
-
-    <div class="faq-item">
-      <h3>Is my data safe?</h3>
-      <p>Kees does not sell your personal data. Speech and photo inputs are only used to power pronunciation feedback and text scanning features.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kees: Learn Dutch - Support</title>
+    <style>
+      :root {
+        --blue: #21468b;
+        --blue-dark: #163166;
+        --bg: #f7f8fb;
+        --card: #ffffff;
+        --text: #1a1a2e;
+        --muted: #6b7280;
+        --border: #e8eaf0;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1220;
+          --card: #171b2e;
+          --text: #eef0f6;
+          --muted: #a2a8bd;
+          --border: #2a2f45;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      .hero {
+        background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+        color: #fff;
+        padding: 64px 24px 88px;
+        text-align: center;
+      }
+      .logo {
+        width: 88px;
+        height: 88px;
+        margin: 0 auto 20px;
+        border-radius: 22px;
+        overflow: hidden;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+      }
+      .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .hero h1 {
+        margin: 0 0 8px;
+        font-size: 32px;
+        font-weight: 800;
+      }
+      .hero p {
+        margin: 0;
+        font-size: 17px;
+        opacity: 0.9;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: -56px auto 60px;
+        padding: 0 20px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 32px;
+        box-shadow: 0 10px 40px rgba(20, 20, 50, 0.08);
+        margin-bottom: 24px;
+      }
+      .card h2 {
+        margin-top: 0;
+        font-size: 20px;
+      }
+      .contact-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--blue);
+        color: #fff !important;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 14px 28px;
+        border-radius: 999px;
+        font-size: 16px;
+      }
+      .contact-btn:hover {
+        background: var(--blue-dark);
+      }
+      a {
+        color: var(--blue);
+      }
+      .center {
+        text-align: center;
+      }
+      .faq-item {
+        border-bottom: 1px solid var(--border);
+        padding: 18px 0;
+      }
+      .faq-item:last-child {
+        border-bottom: none;
+      }
+      .faq-item h3 {
+        margin: 0 0 6px;
+        font-size: 16px;
+      }
+      .faq-item p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+      }
+      footer {
+        text-align: center;
+        color: var(--muted);
+        font-size: 13px;
+        padding-bottom: 40px;
+      }
+      .badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.15);
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <span class="badge">Kees: Learn Dutch</span>
+      <div class="logo"><img src="kees-icon.png" /></div>
+      <h1>How can we help?</h1>
+      <p>Support for the Kees Dutch learning app</p>
     </div>
 
-    <div class="faq-item">
-      <h3>Why does Kees ask for microphone access?</h3>
-      <p>The microphone is used for speaking exercises so Kees can give you pronunciation feedback. You can decline this permission, but speaking exercises won't work without it.</p>
+    <div class="wrap">
+      <div class="card center">
+        <h2>Contact us</h2>
+        <p>
+          Have a question, found a bug, or want to share feedback? We usually
+          reply within a few days.
+        </p>
+        <a
+          class="contact-btn"
+          href="mailto:futuregames31@gmail.com?subject=Kees%20App%20Support"
+        >
+          Send us a message
+        </a>
+      </div>
+
+      <div class="card">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+          <h3>Is my data safe?</h3>
+          <p>
+            Kees does not sell your personal data. Speech and photo inputs are
+            only used to power pronunciation feedback and text scanning
+            features.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why does Kees ask for microphone access?</h3>
+          <p>
+            The microphone is used for speaking exercises so Kees can give you
+            pronunciation feedback. You can decline this permission, but
+            speaking exercises won't work without it.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why does Kees ask for camera / photo access?</h3>
+          <p>
+            The camera and photo library are used for the "Scan &amp; Learn"
+            feature, which recognizes Dutch text in images so you can translate
+            and save new words.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do I report a bug or request a feature?</h3>
+          <p>
+            Send us an email using the button above with as much detail as
+            possible (what happened, what you expected, and your device model).
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I use Kees offline?</h3>
+          <p>
+            Most learning content works offline. Speech recognition,
+            translation, AI Coach, purchase verification and some pronunciation
+            features require an internet connection.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does Kees require an account?</h3>
+          <p>
+            No. Kees does not require an app account. Premium purchases are
+            handled by Apple or Google and can be restored on the same store
+            platform.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How does AI Coach use my text?</h3>
+          <p>
+            AI Coach is optional and for users aged 18 or older. Text you submit
+            is processed through Firebase AI Logic and Google Gemini. Do not
+            enter personal, sensitive or confidential information. Read the
+            <a href="/privacy/">Privacy Policy</a> for details.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="faq-item">
-      <h3>Why does Kees ask for camera / photo access?</h3>
-      <p>The camera and photo library are used for the "Scan &amp; Learn" feature, which recognizes Dutch text in images so you can translate and save new words.</p>
-    </div>
-
-    <div class="faq-item">
-      <h3>How do I report a bug or request a feature?</h3>
-      <p>Send us an email using the button above with as much detail as possible (what happened, what you expected, and your device model).</p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Can I use Kees offline?</h3>
-      <p>Most learning content works offline. Speech recognition and some pronunciation features may require an internet connection.</p>
-    </div>
-
-  </div>
-
-</div>
-
-<footer>
-  &copy; 2026 Future Games - Kees: Learn Dutch
-</footer>
-
-</body>
+    <footer>
+      <a href="/privacy/">Privacy Policy</a><br />
+      &copy; 2026 Future Games - Kees: Learn Dutch
+    </footer>
+  </body>
 </html>

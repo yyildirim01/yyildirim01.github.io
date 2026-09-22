@@ -1,161 +1,397 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kees: Learn Dutch - Privacy Policy</title>
-<style>
-  :root {
-    --blue: #21468B;
-    --blue-dark: #163166;
-    --bg: #f7f8fb;
-    --card: #ffffff;
-    --text: #1a1a2e;
-    --muted: #6b7280;
-    --border: #e8eaf0;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0f1220;
-      --card: #171b2e;
-      --text: #eef0f6;
-      --muted: #a2a8bd;
-      --border: #2a2f45;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.7;
-  }
-  .hero {
-    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
-    color: #fff;
-    padding: 64px 24px 88px;
-    text-align: center;
-  }
-  .logo {
-    width: 88px;
-    height: 88px;
-    margin: 0 auto 20px;
-    border-radius: 22px;
-    overflow: hidden;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-  }
-  .logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  .hero h1 {
-    margin: 0 0 8px;
-    font-size: 32px;
-    font-weight: 800;
-  }
-  .hero p {
-    margin: 0;
-    font-size: 15px;
-    opacity: 0.85;
-  }
-  .badge {
-    display: inline-block;
-    background: rgba(255,255,255,0.15);
-    padding: 6px 14px;
-    border-radius: 999px;
-    font-size: 13px;
-    margin-bottom: 16px;
-  }
-  .wrap {
-    max-width: 720px;
-    margin: -56px auto 60px;
-    padding: 0 20px;
-  }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 32px 36px;
-    box-shadow: 0 10px 40px rgba(20,20,50,0.08);
-  }
-  .card h2 {
-    margin-top: 32px;
-    font-size: 19px;
-  }
-  .card h2:first-child { margin-top: 0; }
-  .card p, .card li { color: var(--text); font-size: 15px; }
-  .card ul { padding-left: 20px; }
-  a { color: var(--blue); }
-  footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 13px;
-    padding-bottom: 40px;
-  }
-</style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kees: Learn Dutch - Privacy Policy</title>
+    <style>
+      :root {
+        --blue: #21468b;
+        --blue-dark: #163166;
+        --bg: #f7f8fb;
+        --card: #ffffff;
+        --text: #1a1a2e;
+        --muted: #6b7280;
+        --border: #e8eaf0;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1220;
+          --card: #171b2e;
+          --text: #eef0f6;
+          --muted: #a2a8bd;
+          --border: #2a2f45;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+      }
+      .hero {
+        background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+        color: #fff;
+        padding: 64px 24px 88px;
+        text-align: center;
+      }
+      .logo {
+        width: 88px;
+        height: 88px;
+        margin: 0 auto 20px;
+        border-radius: 22px;
+        overflow: hidden;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+      }
+      .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .hero h1 {
+        margin: 0 0 8px;
+        font-size: 32px;
+        font-weight: 800;
+      }
+      .hero p {
+        margin: 0;
+        font-size: 15px;
+        opacity: 0.85;
+      }
+      .badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.15);
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        margin-bottom: 16px;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: -56px auto 60px;
+        padding: 0 20px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 32px 36px;
+        box-shadow: 0 10px 40px rgba(20, 20, 50, 0.08);
+      }
+      .card h2 {
+        margin-top: 32px;
+        font-size: 19px;
+      }
+      .card h2:first-child {
+        margin-top: 0;
+      }
+      .card p,
+      .card li {
+        color: var(--text);
+        font-size: 15px;
+      }
+      .card ul {
+        padding-left: 20px;
+      }
+      a {
+        color: var(--blue);
+      }
+      footer {
+        text-align: center;
+        color: var(--muted);
+        font-size: 13px;
+        padding-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <span class="badge">Kees: Learn Dutch</span>
+      <div class="logo"><img src="/support/kees-icon.png" alt="Kees" /></div>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: 22 September 2026</p>
+    </div>
 
-<div class="hero">
-  <span class="badge">Kees: Learn Dutch</span>
-  <div class="logo"><img src="/support/kees-icon.png" alt="Kees"></div>
-  <h1>Privacy Policy</h1>
-  <p>Last updated: September 2026</p>
-</div>
+    <div class="wrap">
+      <div class="card">
+        <p>
+          This Privacy Policy explains how Kees: Learn Dutch ("Kees", "the app",
+          "we") handles information when you use the app. Kees does not require
+          an account and we do not sell your personal data.
+        </p>
 
-<div class="wrap">
-  <div class="card">
+        <h2>Information We Collect</h2>
+        <p>
+          Kees is designed to keep learning progress on your device. Some
+          features send the content needed for that feature directly to a
+          third-party service, as described below.
+        </p>
+        <ul>
+          <li>
+            <strong>Microphone and speech:</strong> when you start a speaking or
+            pronunciation exercise, the app records audio and sends it to
+            Microsoft Azure Speech for speech recognition and, where applicable,
+            pronunciation assessment. A reference sentence may be sent with
+            pronunciation exercises. The temporary recording is deleted from the
+            app's temporary storage after processing. We do not operate a server
+            that stores these recordings.
+          </li>
+          <li>
+            <strong>Text-to-speech:</strong> text you choose to hear may be sent
+            to Microsoft Azure Speech to create audio. If Azure is unavailable,
+            the app may send up to 200 characters to Google Translate
+            text-to-speech as a fallback.
+          </li>
+          <li>
+            <strong>Camera and Photos:</strong> used for Scan &amp; Learn. The
+            selected image is processed on the device with Google ML Kit to
+            recognize text and is not uploaded by Kees. If you request a
+            translation, the extracted text is sent to MyMemory.
+          </li>
+          <li>
+            <strong>Translations, word suggestions and examples:</strong> text
+            you submit for translation may be sent to MyMemory; Dutch word
+            prefixes may be sent to Dutch Wiktionary for suggestions; and a
+            Dutch word you add may be sent to Tatoeba to look for a Dutch
+            example sentence and English translation.
+          </li>
+          <li>
+            <strong>Vocabulary and progress data:</strong> stored locally on
+            your device (e.g. My Words, quiz progress) so the app can work
+            offline.
+          </li>
+          <li>
+            <strong>AI Coach:</strong> if you choose to use an AI feature, the
+            Dutch text, word, phrase or topic you enter is sent through Firebase
+            AI Logic to the Google Gemini Developer API, and the generated
+            response is returned to the app. Firebase AI Logic itself does not
+            store prompts or responses, but Google may process and retain them
+            under the Gemini API terms. Do not enter names, contact details,
+            passwords, health information or other personal, sensitive or
+            confidential information. AI Coach is available only after you
+            confirm that you are at least 18.
+          </li>
+          <li>
+            <strong>Purchases and subscriptions:</strong> RevenueCat and the
+            Apple App Store or Google Play process an anonymous app user
+            identifier, product and entitlement identifiers, purchase status,
+            subscription dates and transaction information so Premium access can
+            be purchased, verified and restored. Kees does not send RevenueCat
+            your name or email address and does not process payment-card
+            details.
+          </li>
+          <li>
+            <strong>App integrity:</strong> Firebase App Check may process app,
+            device and integrity signals through Google Play Integrity on
+            Android or Apple App Attest/DeviceCheck on Apple devices to reduce
+            unauthorised use of AI services. These signals are used for security
+            and abuse prevention.
+          </li>
+          <li>
+            <strong>Advertising and diagnostics data:</strong> Kees uses Google
+            AdMob. Depending on your consent, device and region, the Google
+            Mobile Ads SDK may process information such as IP address, app
+            interactions, diagnostic information, and device or advertising
+            identifiers to deliver, measure and protect ads. Personalized ads
+            are used only where your consent and device settings permit them.
+            Premium subscribers are not shown ads and Kees stops requesting new
+            ads while Premium is active.
+          </li>
+        </ul>
 
-    <p>This Privacy Policy explains how Kees: Learn Dutch ("Kees", "the app", "we") handles information when you use the app. Kees does not require an account and we do not sell your personal data.</p>
+        <h2>Third-Party Services</h2>
+        <p>
+          These providers receive data directly from your device only when the
+          related feature is used, except for advertising services that may run
+          when ads are permitted:
+        </p>
+        <ul>
+          <li>
+            <strong>Microsoft Azure Speech</strong> - speech recognition,
+            pronunciation assessment and text-to-speech. See
+            <a
+              href="https://learn.microsoft.com/legal/cognitive-services/speech-service/speech-to-text/data-privacy-security"
+              target="_blank"
+              rel="noopener"
+              >Speech data, privacy and security</a
+            >
+            and the
+            <a
+              href="https://privacy.microsoft.com/privacystatement"
+              target="_blank"
+              rel="noopener"
+              >Microsoft Privacy Statement</a
+            >.
+          </li>
+          <li>
+            <strong>Google / Firebase</strong> - Firebase AI Logic and the
+            Gemini Developer API for optional AI Coach requests; Firebase App
+            Check for app-integrity protection; AdMob advertising; Google ML Kit
+            on-device text recognition; and Google Translate text-to-speech
+            fallback. See
+            <a
+              href="https://firebase.google.com/support/privacy"
+              target="_blank"
+              rel="noopener"
+              >Privacy and Security in Firebase</a
+            >, the
+            <a
+              href="https://ai.google.dev/gemini-api/terms"
+              target="_blank"
+              rel="noopener"
+              >Gemini API Additional Terms</a
+            >,
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener"
+              >Google's Privacy Policy</a
+            >
+            and
+            <a
+              href="https://developers.google.com/admob/android/privacy/play-data-disclosure"
+              target="_blank"
+              rel="noopener"
+              >Google Mobile Ads data disclosure</a
+            >.
+          </li>
+          <li>
+            <strong>RevenueCat</strong> - anonymous purchase and subscription
+            status, entitlement verification and purchase restoration. See the
+            <a
+              href="https://www.revenuecat.com/privacy"
+              target="_blank"
+              rel="noopener"
+              >RevenueCat Privacy Policy</a
+            >.
+          </li>
+          <li>
+            <strong>Apple App Store / Google Play</strong> - payment processing,
+            subscriptions and purchase restoration are handled by the store
+            where you make the purchase. See
+            <a
+              href="https://www.apple.com/legal/privacy/"
+              target="_blank"
+              rel="noopener"
+              >Apple's Privacy Policy</a
+            >
+            and
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener"
+              >Google's Privacy Policy</a
+            >.
+          </li>
+          <li>
+            <strong>MyMemory</strong> - translation of text submitted by you or
+            recognized through Scan &amp; Learn. See
+            <a
+              href="https://mymemory.translated.net/doc/spec.php"
+              target="_blank"
+              rel="noopener"
+              >MyMemory API specifications</a
+            >.
+          </li>
+          <li>
+            <strong>Tatoeba</strong> - example-sentence search for words you
+            add. See
+            <a
+              href="https://tatoeba.org/en/terms_of_use"
+              target="_blank"
+              rel="noopener"
+              >Tatoeba Terms of Use</a
+            >.
+          </li>
+          <li>
+            <strong>Wikimedia / Dutch Wiktionary</strong> - Dutch word
+            suggestions. See the
+            <a
+              href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy"
+              target="_blank"
+              rel="noopener"
+              >Wikimedia Privacy Policy</a
+            >.
+          </li>
+        </ul>
 
-    <h2>Information We Collect</h2>
-    <p>Kees is designed to keep learning progress on your device. Some features send the content needed for that feature directly to a third-party service, as described below.</p>
-    <ul>
-      <li><strong>Microphone and speech:</strong> when you start a speaking or pronunciation exercise, the app records audio and sends it to Microsoft Azure Speech for speech recognition and, where applicable, pronunciation assessment. A reference sentence may be sent with pronunciation exercises. The temporary recording is deleted from the app's temporary storage after processing. We do not operate a server that stores these recordings.</li>
-      <li><strong>Text-to-speech:</strong> text you choose to hear may be sent to Microsoft Azure Speech to create audio. If Azure is unavailable, the app may send up to 200 characters to Google Translate text-to-speech as a fallback.</li>
-      <li><strong>Camera and Photos:</strong> used for Scan &amp; Learn. The selected image is processed on the device with Google ML Kit to recognize text and is not uploaded by Kees. If you request a translation, the extracted text is sent to MyMemory.</li>
-      <li><strong>Translations, word suggestions and examples:</strong> text you submit for translation may be sent to MyMemory; Dutch word prefixes may be sent to Dutch Wiktionary for suggestions; and a Dutch word you add may be sent to Tatoeba to look for a Dutch example sentence and English translation.</li>
-      <li><strong>Vocabulary and progress data:</strong> stored locally on your device (e.g. My Words, quiz progress) so the app can work offline.</li>
-      <li><strong>Advertising and diagnostics data:</strong> Kees uses Google AdMob. Depending on your consent, device and region, the Google Mobile Ads SDK may process information such as IP address, app interactions, diagnostic information, and device or advertising identifiers to deliver, measure and protect ads. Personalized ads are used only where your consent and device settings permit them.</li>
-    </ul>
+        <h2>Data Retention</h2>
+        <p>
+          Your vocabulary, saved items, settings, game results and learning
+          progress remain on your device until you remove them, clear the app's
+          data or uninstall the app. Kees does not keep a server-side account or
+          learning-progress copy. RevenueCat and the relevant app store retain
+          purchase and subscription records under their own policies. Firebase
+          AI Logic itself does not store AI prompts or responses; the selected
+          Gemini API provider may process or retain them under its terms,
+          including for abuse monitoring and, where the unpaid-service terms
+          apply, service improvement. Other providers may retain service or
+          security logs under their own policies.
+        </p>
 
-    <h2>Third-Party Services</h2>
-    <p>These providers receive data directly from your device only when the related feature is used, except for advertising services that may run when ads are permitted:</p>
-    <ul>
-      <li><strong>Microsoft Azure Speech</strong> - speech recognition, pronunciation assessment and text-to-speech. See <a href="https://learn.microsoft.com/legal/cognitive-services/speech-service/speech-to-text/data-privacy-security" target="_blank" rel="noopener">Speech data, privacy and security</a> and the <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">Microsoft Privacy Statement</a>.</li>
-      <li><strong>Google</strong> - AdMob advertising, Google ML Kit text recognition, and Google Translate text-to-speech fallback. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener">Google Mobile Ads data disclosure</a>.</li>
-      <li><strong>MyMemory</strong> - translation of text submitted by you or recognized through Scan &amp; Learn. See <a href="https://mymemory.translated.net/doc/spec.php" target="_blank" rel="noopener">MyMemory API specifications</a>.</li>
-      <li><strong>Tatoeba</strong> - example-sentence search for words you add. See <a href="https://tatoeba.org/en/terms_of_use" target="_blank" rel="noopener">Tatoeba Terms of Use</a>.</li>
-      <li><strong>Wikimedia / Dutch Wiktionary</strong> - Dutch word suggestions. See the <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noopener">Wikimedia Privacy Policy</a>.</li>
-    </ul>
+        <h2>Your Choices</h2>
+        <p>
+          You can use most study content without granting microphone, camera or
+          photo access. You can disable those permissions at any time in your
+          device settings. You choose when to use speech, Scan &amp; Learn,
+          translation, word-suggestion, example-sentence and AI Coach features.
+          AI Coach is optional and will not send text until you press its
+          request button. Advertising privacy choices are available in the app
+          when required; on iOS, tracking can also be limited via Settings &gt;
+          Privacy &amp; Security &gt; Tracking. You can manage or cancel a
+          subscription through the Apple App Store or Google Play account used
+          for the purchase, and use Restore Purchases inside Kees on the same
+          platform.
+        </p>
 
-    <h2>Data Retention</h2>
-    <p>Your vocabulary, saved items, settings and progress remain on your device until you remove them, clear the app's data or uninstall the app. Kees does not keep a server-side copy. Third-party providers may process technical information and retain service or security logs under their own policies.</p>
+        <h2>No Kees Account</h2>
+        <p>
+          Kees does not require or offer a Kees account. We do not collect an
+          email address or password for app login, and mobile Premium access is
+          not synchronised with the Kees website or between Apple and Google
+          store families. RevenueCat uses a random anonymous app user
+          identifier; purchases can be restored using the applicable store
+          account.
+        </p>
 
-    <h2>Your Choices</h2>
-    <p>You can use most study content without granting microphone, camera or photo access. You can disable those permissions at any time in your device settings. You choose when to use speech, Scan &amp; Learn, translation, word-suggestion and example-sentence features. Advertising privacy choices are available in the app when required; on iOS, tracking can also be limited via Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
+        <h2>Security</h2>
+        <p>
+          We use platform protections and encrypted HTTPS connections when
+          communicating with the services above. No method of electronic
+          transmission or storage is completely secure.
+        </p>
 
-    <h2>Security</h2>
-    <p>We use platform protections and encrypted HTTPS connections when communicating with the services above. No method of electronic transmission or storage is completely secure.</p>
+        <h2>Children's Privacy</h2>
+        <p>
+          Kees is designed for adult Dutch learners and is not directed at
+          children. AI Coach may only be used by people aged 18 or older. We do
+          not knowingly collect personal information from children. If you
+          believe a child has provided personal information through a connected
+          service, contact us so we can help address the request with the
+          relevant provider.
+        </p>
 
-    <h2>Children's Privacy</h2>
-    <p>Kees is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+        <h2>Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. Changes will be
+          posted on this page.
+        </p>
 
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page.</p>
+        <h2>Contact Us</h2>
+        <p>
+          If you have questions about this Privacy Policy, contact us at
+          <a href="mailto:futuregames31@gmail.com">futuregames31@gmail.com</a>.
+        </p>
+      </div>
+    </div>
 
-    <h2>Contact Us</h2>
-    <p>If you have questions about this Privacy Policy, contact us at <a href="mailto:futuregames31@gmail.com">futuregames31@gmail.com</a>.</p>
-
-  </div>
-</div>
-
-<footer>
-  &copy; 2026 Future Games - Kees: Learn Dutch
-</footer>
-
-</body>
+    <footer>&copy; 2026 Future Games - Kees: Learn Dutch</footer>
+  </body>
 </html>
