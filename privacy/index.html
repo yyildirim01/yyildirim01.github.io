@@ -116,7 +116,7 @@
       <span class="badge">Kees: Learn Dutch</span>
       <div class="logo"><img src="/support/kees-icon.png" alt="Kees" /></div>
       <h1>Privacy Policy</h1>
-      <p>Last updated: 2 October 2026</p>
+      <p>Last updated: 3 November 2026</p>
     </div>
 
     <div class="wrap">
@@ -147,7 +147,10 @@
             <strong>Text-to-speech:</strong> text you choose to hear may be sent
             to Microsoft Azure Speech to create audio. If Azure is unavailable,
             the app may send up to 200 characters to Google Translate
-            text-to-speech as a fallback.
+            text-to-speech as a fallback. If neither online voice is available,
+            the app may use a voice installed on your device. Longer passages
+            use the device voice instead of being cut short for the Google
+            fallback.
           </li>
           <li>
             <strong>Camera and Photos:</strong> used for Scan &amp; Learn. The
@@ -206,6 +209,16 @@
             Premium subscribers are not shown ads and Kees stops requesting new
             ads while Premium is active.
           </li>
+          <li>
+            <strong>App reliability reports:</strong> Firebase Crashlytics may
+            receive crash reports and short service-failure codes to help us
+            detect problems with speech, AI, purchases, ads, and word lookup.
+            These reports may include device, app version, and diagnostic
+            information. Kees does not attach lesson text, AI prompts,
+            recognized speech, recordings, or purchase credentials to its
+            service-failure codes. Firebase AI request monitoring is disabled
+            in our project.
+          </li>
         </ul>
 
         <h2>Premium Subscriptions</h2>
@@ -257,7 +270,8 @@
           <li>
             <strong>Google / Firebase</strong> - Firebase AI Logic and the
             Gemini Developer API for optional AI Coach requests; Firebase App
-            Check for app-integrity protection; AdMob advertising; Google ML Kit
+            Check for app-integrity protection; Firebase Crashlytics for app
+            reliability reports; AdMob advertising; Google ML Kit
             on-device text recognition; and Google Translate text-to-speech
             fallback. See
             <a
